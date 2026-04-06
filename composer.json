@@ -1,0 +1,56 @@
+{
+    "name": "flarum/wenyan-lang",
+    "type": "flarum-extension",
+    "description": "文言之包",
+    "keywords": [
+        "locale"
+    ],
+    "license": "MIT",
+    "require": {
+        "flarum/core": "^1.8"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "2.x-dev"
+        },
+        "flarum-extension": {
+            "title": "文言",
+            "category": "language",
+            "icon": {
+                "image": "icon.png",
+                "backgroundColor": "#00247d",
+                "backgroundSize": "cover",
+                "backgroundPosition": "center"
+            }
+        },
+        "flarum-locale": {
+            "code": "zh-wenyan",
+            "title": "文言"
+        },
+        "flarum-cli": {
+            "modules": {
+                "admin": false,
+                "forum": false,
+                "js": false,
+                "jsCommon": false,
+                "css": false,
+                "gitConf": true,
+                "githubActions": false,
+                "prettier": false,
+                "typescript": false,
+                "bundlewatch": false,
+                "backendTesting": false,
+                "editorConfig": true,
+                "styleci": true
+            }
+        }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../../*/*"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
