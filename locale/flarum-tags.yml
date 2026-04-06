@@ -1,0 +1,124 @@
+# flarum-tags.yml - Flarum Tags 擴展文言文翻譯
+
+flarum-tags:
+
+  ##
+  # 前台翻譯（forum）
+  ##
+  forum:
+    # 標籤頁面
+    tags:
+      title: "標籤"
+      meta_title: "標籤列表"
+      all_tags: "諸般標籤"
+
+    # 標籤過濾
+    tag_filter:
+      title: "所有「{tag}」標籤之議論"
+      start_discussion_button: "發議論於 {tag}"
+
+    # 議論中的標籤
+    discussion_controls:
+      add_tags_button: "加標籤"
+      edit_tags_button: "改標籤"
+      tags_heading: "標籤"
+      add_tags: "加標籤"
+      add_tags_submit: "存之"
+      update_tags_submit: "更之"
+      delete_tag_confirmation: "欲去此標籤乎？"
+
+    # 發新議論時的標籤選擇
+    post_discussion:
+      choose_tags: "擇一標籤"
+      no_tags_available: "無標籤可用，請告之壇主。"
+
+    # 編輯議論時的標籤
+    edit_discussion:
+      choose_tags: "擇標籤"
+
+    # 側邊欄
+    sidebar:
+      nav:
+        all_tags: "諸般標籤"
+      tags:
+        more_link: "餘者..."
+
+    # 跳轉到標籤
+    go_to_tags: "往標籤頁"
+
+  ##
+  # 後台翻譯（admin）
+  ##
+  admin:
+    # 標籤管理頁面
+    tags:
+      title: "標籤管理"
+      about_tags_text: "標籤用以分類議論。諸標籤如壇中之子版塊，可依權限設其可見、可議之屬。"
+      create_tag_button: "立新標籤"
+      name_heading: "名號"
+      slug_heading: "別名"
+      last_post_heading: "末帖"
+      color_heading: "色"
+      description_heading: "述"
+      post_count_heading: "帖數"
+      discussion_count_heading: "議論數"
+
+      # 編輯/創建標籤的表單
+      edit_tag:
+        title: "編輯標籤：{name}"
+        create_title: "立新標籤"
+        name_label: "名號"
+        slug_label: "別名"
+        slug_help: "將用於網址，僅允英文、數字、連字符。"
+        description_label: "敘述"
+        description_help: "簡述此標籤。可略。"
+        color_label: "色"
+        color_help: "以十六進制色碼，如 #FF0000。"
+        icon_label: "圖標"
+        icon_text: "{{ICON}} 擇一圖標。"
+        icon_help: "使用 Font Awesome 圖標名，如「fas fa-tag」。"
+        is_restricted_label: "設為隱私標籤"
+        is_restricted_help: "此標籤僅許特定群組可見。"
+        is_hidden_label: "設為隱藏標籤"
+        is_hidden_help: "不現於標籤列表，僅可經由網址入之。"
+        primary_heading: "主要設"
+        parent_heading: "父標籤"
+        parent_help: "設此標籤為子標籤，隸屬於某父標籤。"
+        tags_heading: "子標籤"
+        tags_help: "隸屬於此標籤之子標籤。"
+        delete_tag_button: "刪除標籤"
+        delete_tag_confirmation: "欲永刪「{name}」標籤乎？其下諸議論不刪，但皆失此標籤。"
+        submit_button: "存之"
+        create_button: "立之"
+
+      # 權限
+      permissions:
+        allow_edit_tags_label: "許人編輯標籤"
+        restrict_by_tag_label: "以標籤限權"
+        restrict_by_tag_help: "僅許特定標籤之議論可見。"
+        tag_protected_label: "標籤保護"
+        tag_protected_help: "設此標籤之議論僅許特定權限者見之。"
+
+      # 錯誤訊息
+      errors:
+        slug_conflict: "此別名已用於他標籤"
+        name_conflict: "此名號已用於他標籤"
+
+    # 其他
+    permissions:
+      allow_edit_tags_label: "許人編輯標籤"
+      tag_discussions_label: "標籤議論"
+
+    # 擴展配置
+    extension:
+      title: "標籤"
+      settings:
+        title: "標籤設"
+        min_primary_tags: "最少主標籤數"
+        min_primary_tags_help: "發議論時至少須擇之主標籤數。"
+        max_primary_tags: "最多主標籤數"
+        max_primary_tags_help: "發議論時至多可擇之主標籤數。"
+        min_secondary_tags: "最少輔標籤數"
+        min_secondary_tags_help: "發議論時至少須擇之輔標籤數。"
+        max_secondary_tags: "最多輔標籤數"
+        max_secondary_tags_help: "發議論時至多可擇之輔標籤數。"
