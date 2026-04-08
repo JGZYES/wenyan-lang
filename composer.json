@@ -1,11 +1,29 @@
 {
-    "name": "jgzyes/wenyan-lang",
+    "name": "JGZYES/wenyan-lang",
     "type": "flarum-extension",
-    "description": "文言之包",
+    "description": "Flarum in classical Chinese grammar, Simplified script — elegant and concise.",
     "keywords": [
-        "locale"
+        "locale",
+        "文言",
+        "language"
     ],
     "license": "MIT",
+    "authors": [
+        {
+            "name": "JGZ_YES",
+            "email": "luoriguodu@qq.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Xiaoxiaobai5724",
+            "email": "odoorbell@163.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+    	"source": "https://github.com/JGZYES/wenyan-lang",
+    	"issues": "https://github.com/JGZYES/wenyan-lang/issues"
+  },
     "require": {
         "flarum/core": "^1.8"
     },
@@ -18,7 +36,7 @@
             "category": "language",
             "icon": {
                 "image": "icon.png",
-                "backgroundColor": "#00247d",
+                "backgroundColor": "#F4F2EE",
                 "backgroundSize": "cover",
                 "backgroundPosition": "center"
             }
@@ -26,31 +44,6 @@
         "flarum-locale": {
             "code": "zh-wenyan",
             "title": "文言"
-        },
-        "flarum-cli": {
-            "modules": {
-                "admin": false,
-                "forum": false,
-                "js": false,
-                "jsCommon": false,
-                "css": false,
-                "gitConf": true,
-                "githubActions": false,
-                "prettier": false,
-                "typescript": false,
-                "bundlewatch": false,
-                "backendTesting": false,
-                "editorConfig": true,
-                "styleci": true
-            }
         }
-    },
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../../*/*"
-        }
-    ],
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }
