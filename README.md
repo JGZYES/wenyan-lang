@@ -15,7 +15,7 @@
 
 **_Flarum 最新版_**
 ```bash
-composer require JGZYES/wenyan-lang
+composer require jgzyes/wenyan-lang
 php flarum cache:clear
 ```
 
