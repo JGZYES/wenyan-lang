@@ -1,0 +1,40 @@
+flarum-suspend:
+    admin:
+        permissions:
+            suspend_users_label: '禁言用户'
+    forum:
+        notifications:
+            user_suspended_text: '你已被禁言，时长 {timeReadable}'
+            user_suspended_indefinite_text: '你已被无限期禁言'
+            user_unsuspended_text: '你的禁言已被解除'
+        suspension_info:
+            dismiss_button: 关闭
+            indefinite: '此为无限期禁言'
+            limited: '此禁言将于 {date} 解除'
+            title: '此账号已被禁言'
+        suspend_user:
+            display_message: '向用户显示的消息'
+            indefinitely_label: '无限期禁言'
+            limited_time_days_text: ' 天'
+            limited_time_label: '禁言有限期...'
+            not_suspended_label: '未禁言'
+            placeholder_optional: 可选
+            reason: '禁言原因'
+            status_heading: '禁言状态'
+            title: '禁言 {username}'
+            submit_button: '保存更改'
+        user_badge:
+            suspended_tooltip: 已禁言
+        user_controls:
+            suspend_button: 禁言
+    email:
+        no_reason_given: '此次禁言未给出原因。'
+        suspended:
+            subject: '你的账号已被禁言'
+            body: "嘿 {recipient_display_name}，\n\n你已被禁言，原因如下：\n\n---\n{suspension_message}\n---\n"
+        unsuspended:
+            subject: '你的账号已解除禁言'
+            body: "嘿 {recipient_display_name}，\n\n你的账号已解除禁言。点击下方链接即可返回论坛：\n\n{forum_url}\n"
+    validation:
+        attributes:
+            suspendedUntil: '禁言至'

@@ -1,0 +1,12 @@
+flarum-pusher:
+    admin:
+        pusher_settings:
+            app_cluster_label: 集群
+            app_id_label: '应用 ID'
+            app_key_label: '应用 Key'
+            app_secret_label: '应用 Secret'
+            title: 'Pusher 设置'
+    forum:
+        discussion_list:
+            show_updates_text: '{count, plural, one {显示 # 个有更新的论题} other {显示 # 个有更新的论题}}'
+            

@@ -1,0 +1,23 @@
+flarum-gdpr:
+    lib:
+        data:
+            tagsubscription:
+                export_description: '导出用户对某标签之订阅级别详情（若有）。'
+                anonymize_description: '移除用户对该标签之订阅。'
+            followuser:
+                export_description: '导出用户所关注及关注该用户者之详情。'
+                delete_description: '删除所有与关注用户相关的数据。'
+                anonymize_description: '删除所有与关注用户相关的数据。'
+            uploads:
+                export_description: '用户上传之所有文件。'
+                anonymize_description: '移除上传文件中之用户引用。文件本身仍对匿名化前可查看之用户开放。'
+                delete_description: '删除用户上传之所有文件。'
+            userpolicydata:
+                export_description: '用户接受条款之详情。'
+                delete_description: '移除用户对条款之接受记录。'
+            drafts:
+                export_description: '用户创建之所有草稿。'
+                delete_description: '删除用户创建之所有草稿。'
+            bannedipdata:
+                export_description: '若某 IP 封禁记录与用户相关联（即该用户因 IP 被封），则该用户之 IP 地址将包含于导出数据中，同时附带封禁理由及创建日期。'
+                anonymize_description: '解除与用户关联之任何 IP 地址，但该 IP 本身及封禁理由仍保留。请确保“理由”字段中未存有个人身份信息。'

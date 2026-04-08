@@ -1,0 +1,48 @@
+flarum-mentions:
+    admin:
+        permissions:
+            mention_groups_label: '@ 提及用户组'
+        settings:
+            allow_username_format_label: '允许用户名提及格式 ( @用户名 )'
+            allow_username_format_text: "当前提及用户的格式为 @\"显示名称\"#ID。\n此设置允许使用旧格式 @用户名 ，但保存时仍会转换为新格式。\n"
+    forum:
+        composer:
+            mention_tooltip: '提及用户、用户组或帖子'
+            reply_to_post_text: '回复 #{number}'
+        mentioned_by:
+            title: '回复此帖者'
+            load_more_button: '加载更多'
+        notifications:
+            post_mentioned_text: '{username} 回复了你的帖子'
+            user_mentioned_text: '{username} 提及了你'
+            group_mentioned_text: '{username} 提及了你所属的用户组'
+            others_text: '{count, plural, one {# 个其他} other {# 个其他}}'
+        post:
+            mentioned_by_more_text: '另有 {count} 条回复。'
+            mentioned_by_self_text: '{users} 回复了此帖。'
+            mentioned_by_text: '{users} 回复了此帖。'
+            quote_button: 引用
+            others_text: '{count, plural, one {# 个其他} other {# 个其他}}'
+            reply_link: 回复
+            you_text: 你
+        settings:
+            notify_post_mentioned_label: '有人回复了我的某篇帖子'
+            notify_user_mentioned_label: '有人在帖子中提及了我'
+            notify_group_mentioned_label: '有人在帖子中提及了我所属的用户组'
+        user:
+            mentions_link: 提及
+        post_mention:
+            deleted_text: '[未知]'
+        group_mention:
+            deleted_text: '[未知用户组]'
+    email:
+        post_mentioned:
+            subject: '{replier_display_name} 在 {title} 中回复了你的帖子'
+            body: "嘿 {recipient_display_name}！\n\n{replier_display_name} 在 {title} 中回复了你的帖子（#{post_number}）。\n\n{url}\n\n---\n\n{content}\n"
+        user_mentioned:
+            subject: '{mentioner_display_name} 在 {title} 中提及了你'
+            body: "嘿 {recipient_display_name}！\n\n{mentioner_display_name} 在 {title} 的一篇帖子中提及了你。\n\n{url}\n\n---\n\n{content}\n"
+        group_mentioned:
+            subject: '{mentioner_display_name} 在 {title} 中提及了你所属的用户组'
+            body: "嘿 {recipient_display_name}！\n\n{mentioner_display_name} 在 {title} 中提及了你所属的用户组。\n\n{url}\n\n---\n\n{content}\n"
+            

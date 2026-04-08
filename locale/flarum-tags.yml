@@ -1,0 +1,89 @@
+flarum-tags:
+    admin:
+        edit_tag:
+            delete_tag_button: '删除标签'
+            delete_tag_confirmation: '确定要删除此标签吗？该标签下的论题不会被删除。'
+            description_label: 描述
+            hide_label: '从“全论”中隐藏'
+            slug_label: 短链
+            title: '创建标签'
+            color_label: 颜色
+            icon_label: 图标
+            icon_text: '输入任意 <a>Font Awesome</a> 图标类的名称，<em>需包含</em> <code>fas fa-</code> 前缀。'
+            name_label: 名称
+            name_placeholder: 名称
+            submit_button: '保存更改'
+        nav:
+            tags_text: '管理用于组织论题的标签列表。'
+            tags_button: 标签
+        permissions:
+            allow_edit_tags_label: '允许编辑标签'
+            bypass_tag_counts_label: '绕过标签数量限制'
+            restrict_by_tag_heading: '按标签限制'
+            tag_discussions_label: '标记论题'
+        tag_settings:
+            range_separator_text: ' 至 '
+            required_primary_heading: '主标签数量要求'
+            required_primary_text: '设置可应用于一个论题的主标签最小和最大数量。'
+            required_secondary_heading: '次标签数量要求'
+            required_secondary_text: '设置可应用于一个论题的次标签最小和最大数量。'
+            title: '标签设置'
+        tags:
+            about_tags_text: '标签用于归类论题。主标签类似于传统的论坛版块：可形成两级层级。次标签无层级或顺序，适用于细粒度归类。'
+            create_primary_tag_button: '创建主标签'
+            create_secondary_tag_button: '创建次标签'
+            edit_tag_label: '编辑标签 {tag}'
+            primary_heading: '主标签'
+            secondary_heading: '次标签'
+            settings_heading: 设置
+        basics:
+            tags_label: 标签
+        settings:
+            button_text: '选择标签'
+    forum:
+        all_tags:
+            meta_description_text: '所有标签'
+            meta_title_text: 标签
+        choose_tags:
+            edit_title: '为 {title} 编辑标签'
+            title: '为论题选择标签'
+        discussion_controls:
+            edit_tags_button: '编辑标签'
+        header:
+            back_to_tags_tooltip: '返回标签列表'
+        index:
+            more_link: 更多...
+            untagged_link: 未分类
+            tags_link: 标签
+        post_stream:
+            added_and_removed_tags_text: '{username} 添加了 {tagsAdded}，移除了 {tagsRemoved} {time}。'
+            added_tags_text: '{username} 添加了 {tagsAdded} {time}。'
+            removed_tags_text: '{username} 移除了 {tagsRemoved} {time}。'
+            tags_text: '{count, plural, one {{tags} 个标签} other {{tags} 个标签}}'
+        tag:
+            meta_description_text: '所有带有 {tag} 标签的论题'
+        composer_discussion:
+            choose_tags_link: '选择标签'
+    lib:
+        deleted_tag_text: 已删除
+        tag_selection_modal:
+            bypass_requirements: '绕过标签数量限制'
+            choose_primary_placeholder: '{count, plural, one {选择一个主标签} other {选择 # 个主标签}}'
+            choose_secondary_placeholder: '{count, plural, one {再选 1 个标签} other {再选 # 个标签}}'
+            choose_tags_placeholder: '{count, plural, one {再选 1 个标签} other {再选 # 个标签}}'
+            submit_button: 确认
+            title: '选择标签'
+    ref:
+        choose_tags: '选择标签'
+        choose_tags_placeholder: '{count, plural, one {再选 1 个标签} other {再选 # 个标签}}'
+        name: 名称
+        tags: 标签
+    validation:
+        attributes:
+            name: 名称
+            slug: 短链
+            is_hidden: 隐藏
+            description: 描述
+            color: 颜色
+            tag_count_primary: 主标签数量
+            tag_count_secondary: 次标签数量

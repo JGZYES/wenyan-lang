@@ -1,0 +1,37 @@
+flarum-subscriptions:
+    forum:
+        discussion_controls:
+            unfollow_button: 取消关注
+            unignore_button: 取消忽略
+            follow_button: 关注
+        notifications:
+            new_post_text: '{username} 发表了帖子'
+        settings:
+            follow_after_reply_label: '自动关注我回复过的论题'
+            notify_for_all_posts_label: '通知每个新帖子，而不仅是论题中的最后一帖'
+            notify_new_post_label: '有人在我关注的论题中发帖'
+        sub_controls:
+            following_text: '接收所有回复的通知。'
+            ignoring_text: '永不接收通知。从论题列表中隐藏。'
+            not_following_button: '未关注'
+            not_following_text: '仅在被 @ 提及时接收通知。'
+            notify_alert_tooltip: '有新帖子时接收论坛通知'
+            notify_email_tooltip: '有新帖子时接收邮件通知'
+            follow_button: 关注
+            following_button: 关注中
+            ignoring_button: 忽略
+        badge:
+            following_tooltip: 关注中
+            ignoring_tooltip: 已忽略
+        following:
+            meta_title_text: 关注中
+        index:
+            following_link: 关注中
+    email:
+        new_post:
+            subject: '[新帖] {title}'
+            body: "嘿 {recipient_display_name}！\n\n{poster_display_name} 在你关注的论题中发表了一篇帖子：{title}。\n\n查看新动态，请访问以下链接：\n{url}\n\n---\n\n{content}\n\n---\n\n在你追赶上最新内容之前，你将不再收到此论题的任何通知。\n"
+    ref:
+        follow: 关注
+        following: 关注中
+        ignoring: 忽略

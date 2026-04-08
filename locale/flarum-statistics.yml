@@ -1,0 +1,30 @@
+flarum-statistics:
+    admin:
+        date_selection_modal:
+            description: "选择自定义日期范围以显示统计信息。对于活动较多的论坛，加载数据可能需要数分钟。\n"
+            end_date: '结束日期（含）'
+            errors:
+                end_before_start: '结束日期必须晚于开始日期。'
+            start_date: '开始日期（含）'
+            submit_button: '确认日期范围'
+            title: '选择自定义日期范围'
+        statistics:
+            export_chart_button: '导出图表为 SVG'
+            last_12_months_label: '最近 12 个月'
+            last_28_days_label: '最近 28 天'
+            last_7_days_label: '最近 7 天'
+            mini_heading: '论坛统计'
+            previous_28_days_label: '前 28 天'
+            previous_7_days_label: '前 7 天'
+            custom_label: '选择自定义范围...'
+            custom_label_specified: '{fromDate} 至 {toDate}'
+            today_label: 今日
+            total_label: 总计
+            view_full: '查看更多统计'
+            no_data: '此日期范围内无可用数据。'
+            current_period: '当前周期'
+            previous_period: '上一周期'
+            discussions_heading: 论题
+            loading: 加载中...
+            posts_heading: 帖子
+            users_heading: 用户

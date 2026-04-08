@@ -1,0 +1,15 @@
+flarum-approval:
+    admin:
+        permissions:
+            approve_posts_label: '审核帖子'
+            reply_without_approval_label: '无需审核即可回复论题'
+            start_discussions_without_approval_label: '无需审核即可发起论题'
+    forum:
+        post_controls:
+            approve_button: 批准
+        badge:
+            awaiting_approval_tooltip: '待审核'
+        post:
+            awaiting_approval_text: '待审核'
+    ref:
+        awaiting_approval: '待审核'

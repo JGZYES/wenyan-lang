@@ -1,0 +1,38 @@
+flarum-flags:
+    admin:
+        permissions:
+            flag_posts_label: '标记帖子'
+            view_flags_label: '查看被标记的帖子'
+        settings:
+            flag_own_posts_label: '允许用户标记自己的帖子'
+            guidelines_url_label: '社区准则 URL'
+            title: '标记设置'
+    forum:
+        flag_post:
+            confirmation_message: '感谢你标记此帖。我们的版主将予以核查。'
+            reason_details_placeholder: '补充说明（可选）'
+            reason_inappropriate_label: 不当
+            reason_inappropriate_text: '此帖具有冒犯性、辱骂性，或违反了我们的<a>社区准则</a>。'
+            reason_missing_message: '请为我们的版主提供一些说明。'
+            reason_off_topic_label: 离题
+            reason_off_topic_text: '此帖与当前讨论无关，应移至别处。'
+            reason_other_label: '其他（请注明）'
+            reason_spam_label: 垃圾
+            reason_spam_text: '此帖为广告。'
+            dismiss_button: 确认
+            submit_button: '标记帖子'
+            title: '标记帖子'
+        flagged_posts:
+            empty_text: '暂无标记'
+            item_text: '{username} 发表于 <em>{discussion}</em>'
+            title: '被标记的帖子'
+            tooltip: '被标记的帖子'
+        post:
+            dismiss_flag_button: '撤销标记'
+            flagged_by_text: '由 {username} 标记'
+            flagged_by_with_reason_text: '由 {username} 标记为“{reason}”'
+        post_controls:
+            flag_button: 标记
+    ref:
+        flag_post: '标记帖子'
+        flagged_posts: '被标记的帖子'

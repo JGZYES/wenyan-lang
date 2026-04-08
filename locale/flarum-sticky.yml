@@ -1,0 +1,15 @@
+flarum-sticky:
+    admin:
+        permissions:
+            sticky_discussions_label: '置顶论题'
+    forum:
+        discussion_controls:
+            unsticky_button: 取消置顶
+            sticky_button: 置顶
+        post_stream:
+            discussion_stickied_text: '{username} 置顶了此论题 {time}。'
+            discussion_unstickied_text: '{username} 取消了此论题的置顶 {time}。'
+        badge:
+            sticky_tooltip: 置顶
+    ref:
+        sticky: 置顶
